@@ -2,7 +2,7 @@
 
 ## Membres du groupe
 
-1. Adam Soua A02
+1. Adem Soua A02
 2. Med Haroun Trabelsi A07
 
 ## Description du projet
