@@ -23,7 +23,7 @@
         android:id="@+id/btn_nouveau_as"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="NOUVEAU VOYAGEUR"
+        android:text="Voyager à nouveau"
         android:textColor="#FFFFFF"
         android:backgroundTint="#101827" />
 
