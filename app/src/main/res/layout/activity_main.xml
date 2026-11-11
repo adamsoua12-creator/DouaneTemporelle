@@ -14,7 +14,7 @@
             android:id="@+id/txt_titre_as"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DOUANE TEMPORELLE"
+            android:text="DOUANE TEMPORELLE-accueil"
             android:textColor="#FFFFFF"
             android:textSize="26sp"
             android:textStyle="bold"
