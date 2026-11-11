@@ -38,23 +38,49 @@ public class ResultActivity extends AppCompatActivity {
                 MainActivity.construireCle(MainActivity.MATRICULE, "NOM_VOYAGEUR")
         );
 
-        if (nom == null) {
+        if (nom == null || nom.trim().isEmpty()) {
             nom = "Voyageur";
         }
 
         // عرض النتيجة وتغيير لون الشاشة
         if (verdict) {
+
             layoutResultat.setBackgroundColor(Color.rgb(22, 138, 85));
-            txtResultat.setText("Bon voyage " + nom + " !");
+
+            txtResultat.setText(
+                    "VOYAGE APPROUVÉ !\n\n" +
+                            "Félicitations " + nom + " !\n\n" +
+                            "Votre passage à travers le temps est autorisé.\n" +
+                            "Nous vous souhaitons un excellent voyage temporel."
+            );
+
         } else {
+
             layoutResultat.setBackgroundColor(Color.rgb(192, 57, 43));
-            txtResultat.setText(nom + " est en état d'arrestation temporelle");
+
+            txtResultat.setText(
+                    "VOYAGE REFUSÉ !\n\n" +
+                            "Désolé " + nom + " !\n\n" +
+                            "Votre demande de voyage temporel a été refusée.\n" +
+                            "Veuillez respecter les règles de la douane temporelle."
+            );
         }
 
         // العودة إلى المسافر الجديد وإغلاق الشاشات السابقة
+        btnNouveau.setText("Nouveau voyageur");
+
         btnNouveau.setOnClickListener(v -> {
-            Intent retour = new Intent(ResultActivity.this, MainActivity.class);
-            retour.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+
+            Intent retour = new Intent(
+                    ResultActivity.this,
+                    MainActivity.class
+            );
+
+            retour.addFlags(
+                    Intent.FLAG_ACTIVITY_CLEAR_TOP |
+                            Intent.FLAG_ACTIVITY_NEW_TASK
+            );
+
             startActivity(retour);
             finish();
         });
