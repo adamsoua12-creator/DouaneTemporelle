@@ -12,3 +12,10 @@ un poste de douane pour les voyageurs dans le temps.
 - Android Studio
 - Java
 - XML
+- 
+## Règles du voyage temporel
+
+- Le voyageur doit remplir ses informations.
+- L'âge temporel est calculé à partir de l'année de destination et de l'année de naissance.
+- Certains voyages vers le passé peuvent être refusés.
+- Le résultat indique si le voyage est approuvé ou refusé.
