@@ -29,7 +29,7 @@
             android:id="@+id/txt_titre_verif_as"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="PASSEPORT TEMPOREL"
+            android:text="verification du voyageure"
             android:textColor="#00D9FF"
             android:textSize="20sp"
             android:textStyle="bold"
