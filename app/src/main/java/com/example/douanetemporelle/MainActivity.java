@@ -84,6 +84,16 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
 
+            // التحقق من صحة السنوات
+            if (anneeNaissance <= 0 || anneeNaissance > 9999 ||
+                    anneeDestination <= 0 || anneeDestination > 9999) {
+
+                Toast.makeText(this,
+                        "Les années doivent être comprises entre 1 et 9999",
+                        Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             // حساب العمر الزمني
             int ageTemporel = anneeDestination - anneeNaissance;
 
