@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101827">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txt_titre_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOUANE TEMPORELLE"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/txt_sous_titre_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="POSTE DE CONTROLE DES VOYAGEURS"
+            android:textColor="#00D9FF"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/txt_nom_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom du voyageur"
+            android:textColor="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/edt_nom_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez votre nom"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/txt_naissance_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Année de naissance"
+            android:textColor="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/edt_naissance_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Exemple : 1990"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:inputType="number"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/txt_destination_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Année de destination"
+            android:textColor="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/edt_destination_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Exemple : 2050"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:inputType="number"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/txt_motif_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motif du voyage"
+            android:textColor="#FFFFFF"/>
+
+        <Spinner
+            android:id="@+id/spn_motif_as"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/btn_inspecter_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INSPECTER LE PROFIL"
+            android:textStyle="bold"
+            android:backgroundTint="#00A8CC"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>
+

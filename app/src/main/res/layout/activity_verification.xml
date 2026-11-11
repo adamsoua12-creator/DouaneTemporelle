@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#101827"
+    android:padding="12dp">
+
+    <!-- صورة جواز السفر -->
+    <ImageView
+        android:id="@+id/img_passeport_as"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:src="@drawable/passport"
+        android:scaleType="centerInside"
+        android:background="#26364D"
+        android:contentDescription="Image du passeport" />
+
+    <!-- معلومات المسافر -->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:padding="16dp"
+        android:background="#1D2B40">
+
+        <TextView
+            android:id="@+id/txt_titre_verif_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PASSEPORT TEMPOREL"
+            android:textColor="#00D9FF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/txt_nom_verif_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom : "
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:layout_below="@id/txt_titre_verif_as"
+            android:layout_marginTop="35dp" />
+
+        <TextView
+            android:id="@+id/txt_age_verif_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Âge temporel : "
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:layout_below="@id/txt_nom_verif_as"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:id="@+id/txt_motif_verif_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motif : "
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:layout_below="@id/txt_age_verif_as"
+            android:layout_marginTop="25dp" />
+
+        <Button
+            android:id="@+id/btn_approuver_as"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="APPROUVER"
+            android:backgroundTint="#168A55"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btn_refuser_as"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="REFUSER"
+            android:backgroundTint="#C0392B"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</LinearLayout>
+
